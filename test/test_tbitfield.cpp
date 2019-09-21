@@ -6,14 +6,14 @@ TEST(TBitField, can_create_bitfield_with_positive_length)
 {
   ASSERT_NO_THROW(TBitField bf(3));
 }
-
+//Первый тест
 TEST(TBitField, can_get_length)
 {
   TBitField bf(3);
 
   EXPECT_EQ(3, bf.GetLength());
 }
-
+//Второй тест
 TEST(TBitField, new_bitfield_is_set_to_zero)
 {
   TBitField bf(100);
@@ -295,7 +295,7 @@ TEST(TBitField, can_invert_many_random_bits_bitfield)
 
   EXPECT_EQ(expNegBf, negBf);
 }
-
+//Последний тест
 TEST(TBitField, bitfields_with_different_bits_are_not_equal)
 {
   const int size = 4;
